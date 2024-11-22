@@ -20,6 +20,37 @@ This is a Django-based library management system that allows users to register, 
 - **Django Celery Beat**: For scheduling periodic tasks (e.g., sending due date reminders).
 - **sqlite3**: Database backend.
 
+# Installation
+
+Follow these steps to set up and run the library management system:
+
+### 1. Clone the repository
+ git clone https://github.com/17prateek12/Library_management .
+
+### 2. SetUp virtual Enviroment
+ python -m virtualenv server
+
+### 3. Install packages
+ pip install -r requirements.txt 
+
+### 4. Start with following
+python manage.py runserver
+celery -A library_management worker --loglevel=info
+celery -A library_management beat --loglevel=info
+
+### To login as librarian
+username:17prateek12
+password: Prateek@1712
+email associated: 17prateek12@gmail.com
+
+### To login as user
+username:walkclick
+password: Prateek@1712
+email associated: prateeksharma1885@gmail.com
+
+username:walkclick12
+password: Prateek@1712
+email associated: 99prateek12@gmail.com
 
 
 
